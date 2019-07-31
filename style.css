@@ -23,11 +23,41 @@ body {
 
 /*Шапка*/
 #header {
-	height: 100px;
-	background-color: #ddd;
+    height: 148px;
+    background: white url("img/bg-header.jpg") left top no-repeat;
+}
+#header .logo {
+    margin-top: 51px;
+    float: left;
+}
+#header .contacts {
+    float: right;
+    text-align: right;
+    margin-top: 25px;
+}
+#header .contacts p {
+    font: bold 18px/14px Arial;
+    color: black;
+}
+.green {
+    color: #1d8b15;
 }
 
-/*Контент*/
+.gray {
+    color: #666;
+}
+#header .contacts p .green {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#header .contacts p .gray {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+
 #content {
 	padding-bottom: 50px;
 	overflow: hidden;
