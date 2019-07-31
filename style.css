@@ -26,16 +26,16 @@ body {
     height: 148px;
     background: white url("img/bg-header.jpg") left top no-repeat;
 }
-#header .logo {
+.logo {
     margin-top: 51px;
     float: left;
 }
-#header .contacts {
+.contacts {
     float: right;
     text-align: right;
     margin-top: 25px;
 }
-#header .contacts p {
+.contacts p {
     font: bold 18px/14px Arial;
     color: black;
 }
