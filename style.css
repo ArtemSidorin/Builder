@@ -2,25 +2,21 @@
 	margin: 0;
 	padding: 0;
 }
-
 html,
 body {
 	height: 100%;
 }
-
 body {
     background: #f3f9fa url("img/bg.png") repeat;
     font: 14px/22px Arial;
     color: #444;
 }
-
 #wrap {
 	background-color: white;
 	min-height: 100%;
 	position: relative;
 	min-width: 980px;
 }
-
 /*Шапка*/
 #header {
     height: 148px;
@@ -42,7 +38,6 @@ body {
 .green {
     color: #1d8b15;
 }
-
 .gray {
     color: #666;
 }
@@ -257,9 +252,6 @@ button:hover {
 .block.search .description {
     margin-bottom: 0;
 }
-
-
-
 .block>.content {
     padding: 10px;
 }
@@ -267,10 +259,101 @@ button:hover {
     margin-bottom: 0;
     line-height: 20px;
 }
-
+.block.category .header {
+    background-image: url("img/category.png");
+}
+.block.category .v-menu>li {
+    list-style-type: none;
+}
+.block.category .v-menu>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-top: 1px solid #ccc;
+    line-height: 14px;
+}
+.block.category .v-menu>li:first-child>a {
+    border-top: 0;
+}
+.block.category .v-menu>li:last-child>a {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+.block.category .v-menu>li>a:hover,
+.block.category .v-menu>li.active>a {
+    background-color: #f8f8f8;
+    color: #444;
+}
 #main {
 	overflow: hidden;
 }
+#product-list {
+    margin-top: 40px;
+    overflow: hidden;
+}
+#product-list>.product-item {
+    background-color: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    width: 226px;
+    text-align: center;
+}
+#product-list>.product-item>p,
+#product-list>.product-item>div {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#product-list>.product-item>.name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    height: 35px;
+    color: black;
+}
+#product-list>.product-item>.photo {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e4e4e4;
+    width: 153px;
+    height: 137px;
+    margin: 0 auto 10px;
+}
+#product-list>.product-item>.photo>img {
+    width: auto;
+    height: 137px;
+}
+#product-list>.product-item>.desc {
+    font-size: 12px;
+    line-height: 18px;
+    height: 55px;
+}
+#product-list>.product-item>.price {
+    color: #298f22;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+}
+#product-list>.product-item>.button {
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+
+
+
+
+
+
 
 /*Подвал*/
 	#footer {
