@@ -8,7 +8,7 @@ body {
 }
 body {
     background: #f3f9fa url("img/bg.png") repeat;
-    font: 14px/22px Arial;
+    font: 14px/22px Arial, Tahoma, Verdana, sans-serif;
     color: #444;
 }
 #wrap {
@@ -347,11 +347,40 @@ button:hover {
     margin-bottom: 0;
     overflow: visible;
 }
-
-
-
-
-
+.pagination {
+    clear: both;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: inline-block;
+}
+.pagination li {
+    float: left;
+    list-style-type: none;
+}
+.pagination li a,
+.pagination li.disabled {
+    display: block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: white;
+    padding: 0 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.pagination li.disabled {
+    color: #999;
+}
+.pagination li.active a,
+.pagination li a:hover {
+    color: white;
+    background-color: #41b039;
+}
+.pagination li+li a {
+    border-left: 1px solid #ccc;
+}
 
 
 
@@ -380,6 +409,9 @@ button:hover {
 
 #footer .left a+a {
     margin-left: 17px;
+}
+#footer .left a:hover {
+	color: red;
 }
 #footer .count {
     float: right;
