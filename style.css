@@ -87,6 +87,7 @@ body {
     text-decoration: none;
     float: left;
     padding-left: 25px;
+    cursor: pointer;
 }
 #navigation>ul>li:first-child>a {
     padding-left: 29px;
@@ -99,10 +100,6 @@ body {
     background: #333;
     color: #76e16e;
 }
-
-
-
-
 #content {
 	padding: 0 29px 102px;
 	overflow: hidden;
@@ -284,6 +281,10 @@ button:hover {
 #product-list {
     margin-top: 40px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 #product-list>.product-item {
     background-color: white;
@@ -291,7 +292,6 @@ button:hover {
     -moz-border-radius: 3px;
     border-radius: 3px;
     border: 1px solid #ddd;
-    float: left;
     margin: 0 20px 20px 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
